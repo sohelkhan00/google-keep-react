@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f4b400;
+}
+
+.header {
+  color: white;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.input-card {
+  box-shadow: 0 3px 5px rgb(0 0 0 / 40%);
+  height: 10em;
+  width: 20em;
+  margin: 2em auto;
+  padding: 2em;
+}
+
+.input-card .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.input-card .inputs input {
+  height: 2em;
+}
+
+.input-card button {
+  float: right;
+  margin-top: 15px;
+}
+
+.input-card-small {
+  box-shadow: 0 3px 5px rgb(0 0 0 / 40%);
+  height: 5em;
+  width: 20em;
+  margin: 2em auto;
+  padding: 2em;
+}
+
+.input-card-small input {
+  width: 100%;
+  height: 2em;
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 2em;
+}
+
+.note-card {
+  box-shadow: 0 3px 5px rgb(0 0 0 / 40%);
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+}
+
+.note-card .note-middle {
+  margin: 40px;
+  cursor: pointer;
+}
+
+.container {
+  float: right;
+  width: 70%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 30%;
+  padding: 5%;
+}
+
+.sidebar > * {
+  margin: 10%;
+}
+
+.sidebar li button {
+  margin: 10%;
+  border: none;
+  font-size: 1.2em;
+}
+
+.note-bottom > button {
+  margin: 0 5px;
+}
+
+.note-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-top > button {
+  border: none;
+  outline: none;
+  float: right;
+  cursor: pointer;
+}
+
+.note-middle > hr {
+  margin-bottom: 10%;
+}
+
+.note-bottom .color {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+.input-btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-btns > button {
+  margin: 15px 5px;
+  padding: 5px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.note-top .tags button {
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid black;
+  padding: 0.2em 0.5em;
+  border-radius: 10%;
+  cursor: pointer;
+}
